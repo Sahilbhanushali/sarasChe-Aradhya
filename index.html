@@ -4,8 +4,63 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Home One || Aports || Aports HTML 5 Template </title>
-    <!-- favicons Icons -->
+    <title>Niilkanth Aaradhya | Vapi's Biggest Residences | 2 & 3 BHK Apartments</title>
+    <meta name="description" content="Experience luxury living in Vapi's biggest residences at Niilkanth Aaradhya. Premium 2 & 3 BHK apartments with modern amenities, landscaped gardens, and prime location." />
+    <meta name="keywords" content="Niilkanth Aaradhya, Vapi apartments, 2 BHK Vapi, 3 BHK Vapi, luxury apartments Vapi, biggest residences Vapi, new apartments Vapi" />
+    <meta name="author" content="Niilkanth Developers" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.niilkanthaaradhya.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.niilkanthaaradhya.com/" />
+    <meta property="og:title" content="Niilkanth Aaradhya | Vapi's Biggest Residences" />
+    <meta property="og:description" content="Experience luxury living in Vapi's biggest residences at Niilkanth Aaradhya. Premium 2 & 3 BHK apartments with modern amenities." />
+    <meta property="og:image" content="https://www.niilkanthaaradhya.com/assets/images/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.niilkanthaaradhya.com/" />
+    <meta property="twitter:title" content="Niilkanth Aaradhya | Vapi's Biggest Residences" />
+    <meta property="twitter:description" content="Experience luxury living in Vapi's biggest residences at Niilkanth Aaradhya. Premium 2 & 3 BHK apartments with modern amenities." />
+    <meta property="twitter:image" content="https://www.niilkanthaaradhya.com/assets/images/twitter-image.jpg" />
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Residence",
+      "name": "Niilkanth Aaradhya",
+      "description": "Vapi's Biggest Residences with premium 2 & 3 BHK apartments",
+      "url": "https://www.niilkanthaaradhya.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vapi",
+        "addressRegion": "Gujarat",
+        "addressCountry": "India"
+      },
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Landscaped Gardens"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Fully Equipped Gym"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Banquet Halls"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Children's Play Area"
+        }
+      ]
+    }
+    </script>
+
+        <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
@@ -45,6 +100,70 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/aports.css" />
     <link rel="stylesheet" href="assets/css/aports-responsive.css" />
+    
+    <style>
+        /* Smooth scrolling for the entire page */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Navigation styling for single page */
+        .main-menu__list li a.active {
+            color: #CEAE92;
+            position: relative;
+        }
+        
+        .main-menu__list li a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #CEAE92;
+        }
+        
+        /* Mobile navigation adjustments */
+        @media (max-width: 991px) {
+            .main-menu__list {
+                padding: 20px 0;
+            }
+            
+            .main-menu__list li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        
+
+        /* Preloader styling */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .preloader__image {
+            width: 100px;
+            height: 100px;
+            background: url('assets/images/resources/logo-1.png') center center no-repeat;
+            background-size: contain;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
 
 <body class="custom-cursor">
@@ -73,7 +192,7 @@
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="text">
-                                    <p>30 Commercial Road Fratton, Australia</p>
+                                    <p>Niilkanth Aaradhya, Vapi, Gujarat</p>
                                 </div>
                             </li>
                             <li>
@@ -110,60 +229,37 @@
                         <div class="main-menu__main-menu-box">
                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                             <ul class="main-menu__list">
-                                <li class="dropdown current">
-                                    <a href="index.html">Home </a>
-                                    <ul class="shadow-box">
-                                        <li><a href="index.html">Home One</a></li>
-                                        <li><a href="index2.html">Home Two</a></li>
-                                        <li><a href="index3.html">Home Three</a></li>
-                                        <li class="dropdown">
-                                            <a href="#">Header Styles</a>
-                                            <ul>
-                                                <li><a href="index.html">Header One</a></li>
-                                                <li><a href="index2.html">Header Two</a></li>
-                                                <li><a href="index3.html">Header Three</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                <li>
+                                    <a href="#home">Home </a>
+                                 
                                 </li>
                                 <li>
-                                    <a href="about.html">About</a>
+                                    <a href="#about">About</a>
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#">Pages</a>
-                                    <ul class="shadow-box">
-                                        <li><a href="services.html">Services</a>
-                                        </li>
-                                        <li><a href="the-building.html">The Building</a>
-                                        </li>
-                                        <li><a href="agents.html">Agents</a></li>
-                                        <li><a href="faq.html">FAQs</a></li>
-                                    </ul>
+                                <li >
+                                    <a href="#features">Features</a>
+                                   
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#">Appartments</a>
-                                    <ul class="shadow-box">
-                                        <li><a href="apartments.html">Apartments</a></li>
-                                        <li><a href="apartment-details.html">Apartment Details</a></li>
-                                    </ul>
+                                <li >
+                                    <a href="#floor-plans">Floor Plans</a>
+                                  
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#">News</a>
-                                    <ul class="shadow-box">
-                                        <li><a href="news.html">News</a></li>
-                                        <li><a href="news-details.html">News Details</a></li>
-                                    </ul>
+                                <li >
+                                    <a href="#neighborhood">Neighborhood</a>
+                                   
+                                </li>
+                                <li >
+                                    <a href="#gallery">Gallery</a>
+                                   
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <a href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="main-menu__right">
                             <div class="main-menu__search-btn-box">
-                                <div class="main-menu__search-box">
-                                    <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
-                                </div>
+                             
                                 <div class="main-menu__btn-box">
                                     <a href="contact.html" class="thm-btn main-menu__btn">Schedule a Visit</a>
                                 </div>
@@ -179,7 +275,7 @@
         </div><!-- /.stricky-header -->
 
         <!--Main Slider Start-->
-        <section class="main-slider clearfix">
+        <section class="main-slider clearfix" id="home">
             <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
                 "effect": "fade",
                 "pagination": {
@@ -204,7 +300,7 @@
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="main-slider__content">
-                                        <h2 class="main-slider__title">Modern <br> Residential <br> Apartments</h2>
+                                        <h2 class="main-slider__title">Experience Niilkanth Aaradhya <br> a home where everything <br> is exceptional</h2>
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +315,7 @@
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="main-slider__content">
-                                        <h2 class="main-slider__title">Modern <br> Residential <br> Apartments</h2>
+                                   <h2 class="main-slider__title">Ek ghar jya <br> badhu j saras <br> chhe</h2>
                                     </div>
                                 </div>
                             </div>
@@ -234,16 +330,12 @@
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="main-slider__content">
-                                        <h2 class="main-slider__title">Modern <br> Residential <br> Apartments</h2>
+                                        <h2 class="main-slider__title">Home starting   <br> at just <br> 3lakh</h2>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
 
 
@@ -263,7 +355,7 @@
         <!--Main Slider End-->
 
         <!--About One Start-->
-        <section class="about-one">
+        <section class="about-one" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
@@ -286,19 +378,17 @@
                     <div class="col-xl-6">
                         <div class="about-one__right">
                             <div class="section-title text-left">
-                                <span class="section-title__tagline">the building overview</span>
-                                <h2 class="section-title__title">Modern & premium apartments</h2>
+                                <span class="section-title__tagline">Overview</span>
+                                <h2 class="section-title__title">Vapi’s Biggest Residences Are Here</h2>
                             </div>
-                            <p class="about-one__text">Interior of volumes, space, air, proportion, with certain light
-                                and mood. These interiors are meant to last forever.
-                                you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                            <p class="about-one__text">Discover a new standard of living in Vapi with our newly launched 2 and 3 BHK residences. As the home to the biggest apartments in the city, Niilkanth Aaradhya offers unmatched space, luxury, and comfort. We are "Building with Emotions" to create a community where your family has endless room to grow and create lasting memories</p>
                             <ul class="list-unstyled about-one__points">
                                 <li>
                                     <div class="icon">
                                         <i class="fa fa-check"></i>
                                     </div>
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet</p>
+                                        <p>Landscaped Gardens & Relaxing Gazebos</p>
                                     </div>
                                 </li>
                                 <li>
@@ -306,7 +396,7 @@
                                         <i class="fa fa-check"></i>
                                     </div>
                                     <div class="text">
-                                        <p>Sed tempor arcu non ligula convallis</p>
+                                        <p>State of the Art Gym & Indoor Games Room</p>
                                     </div>
                                 </li>
                                 <li>
@@ -314,7 +404,23 @@
                                         <i class="fa fa-check"></i>
                                     </div>
                                     <div class="text">
-                                        <p>Fusce sodales lacus sollicitudin</p>
+                                        <p>Spacious Banquet Halls for Celebrations</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>Secure Children's Play Area</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>24/7 Security and High-Speed Elevators</p>
                                     </div>
                                 </li>
                             </ul>
@@ -378,7 +484,7 @@
         <!--Counter One End-->
 
         <!--Feature One Start-->
-        <section class="feature-one">
+        <section class="feature-one" id="features">
             <div class="feature-one__bg-box">
                 <div class="feature-one__bg"
                     style="background-image: url(assets/images/backgrounds/feature-one-bg.jpg);"></div>
@@ -392,17 +498,13 @@
                         <div class="feature-one__left">
                             <div class="section-title text-left">
                                 <span class="section-title__tagline">Main features</span>
-                                <h2 class="section-title__title">Our main property features</h2>
+                                <h2 class="section-title__title">Centrally Located for Ultimate Convenience</h2>
                             </div>
-                            <p class="feature-one__text">Man braid hell of edison bulb four brunch subway <br> tile
-                                authentic, chillwave put a bird on it church-key <br> try-hard ramps heirloom.</p>
+                            <p class="feature-one__text">Nestled in a prime location in Vapi, everything you need is just moments away. From top schools and hospitals to shopping malls and spiritual centers, enjoy seamless connectivity to the entire city.
+.
+ <br>Ready to explore your new home? Learn more about the project or contact us today to book a site visit</p>
                             <div class="feature-one__video-link">
-                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                    <div class="feature-one__video-icon">
-                                        <span class="fa fa-play"></span>
-                                        <i class="ripple"></i>
-                                    </div>
-                                </a>
+                               
                             </div>
                             <div class="feature-one__counter-box">
                                 <ul class="feature-one__counter-list list-unstyled">
@@ -438,12 +540,9 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-residential"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="services.html">Smart living</a></h3>
-                                            <p class="feature-one__text">When nothing prevents our being
-                                                able to we like best, every pleasure to be welcomed & every.</p>
-                                            <div class="feature-one__btn">
-                                                <a href="services.html"> <i class="fa fa-arrow-right"></i>Read More</a>
-                                            </div>
+                                            <h3 class="feature-one__title"><a href="services.html">Landscaped Garden</a></h3>
+                                            <p class="feature-one__text">Find your moment of peace in our beautifully manicured green spaces.</p>
+                                          
                                         </div>
                                     </div>
                                 </div>
@@ -455,13 +554,10 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-sustainable"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="services.html">Eco construction</a>
+                                            <h3 class="feature-one__title"><a href="services.html">Fully equipped Gym Room</a>
                                             </h3>
-                                            <p class="feature-one__text">When nothing prevents our being
-                                                able to we like best, every pleasure to be welcomed & every.</p>
-                                            <div class="feature-one__btn">
-                                                <a href="services.html"> <i class="fa fa-arrow-right"></i>Read More</a>
-                                            </div>
+                                            <p class="feature-one__text">Stay active and healthy in our modern, state of the art gymnasium</p>
+                                          
                                         </div>
                                     </div>
                                 </div>
@@ -473,13 +569,8 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-world"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="services.html">Attractive
-                                                    location</a></h3>
-                                            <p class="feature-one__text">When nothing prevents our being
-                                                able to we like best, every pleasure to be welcomed & every.</p>
-                                            <div class="feature-one__btn">
-                                                <a href="services.html"> <i class="fa fa-arrow-right"></i>Read More</a>
-                                            </div>
+                                            <h3 class="feature-one__title"><a href="services.html">Spacious Banquet Halls</a></h3>
+                                            <p class="feature-one__text">Celebrate life's special moments in elegant halls designed for grand gatherings.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -491,13 +582,57 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-home-automation"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="services.html">Modern technology</a>
+                                            <h3 class="feature-one__title"><a href="services.html">Secure Kid’s Play Area</a>
                                             </h3>
-                                            <p class="feature-one__text">When nothing prevents our being
-                                                able to we like best, every pleasure to be welcomed & every.</p>
-                                            <div class="feature-one__btn">
-                                                <a href="services.html"> <i class="fa fa-arrow-right"></i>Read More</a>
+                                            <p class="feature-one__text">Watch your children laugh and play in a safe, dedicated environment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                    <div class="feature-one__single">
+                                        <div class="feature-one__single-inner">
+                                            <div class="feature-one__icon">
+                                                <span class="icon-home-automation"></span>
                                             </div>
+                                            <h3 class="feature-one__title"><a href="services.html">Indoor Game Room</a>
+                                            </h3>
+                                            <p class="feature-one__text">Bond with family and friends over a variety of indoor games.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                    <div class="feature-one__single">
+                                        <div class="feature-one__single-inner">
+                                            <div class="feature-one__icon">
+                                                <span class="icon-home-automation"></span>
+                                            </div>
+                                            <h3 class="feature-one__title"><a href="services.html">Relaxing Gazebo</a>
+                                            </h3>
+                                            <p class="feature-one__text">Unwind with a book or a conversation in our charming gazebos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                    <div class="feature-one__single">
+                                        <div class="feature-one__single-inner">
+                                            <div class="feature-one__icon">
+                                                <span class="icon-home-automation"></span>
+                                            </div>
+                                            <h3 class="feature-one__title"><a href="services.html">High-Speed Elevator Towers</a>
+                                            </h3>
+                                            <p class="feature-one__text">Enjoy quick and convenient access to your home with modern elevators.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                    <div class="feature-one__single">
+                                        <div class="feature-one__single-inner">
+                                            <div class="feature-one__icon">
+                                                <span class="icon-home-automation"></span>
+                                            </div>
+                                            <h3 class="feature-one__title"><a href="services.html">Advanced Fire-Fighting System</a>
+                                            </h3>
+                                            <p class="feature-one__text">Equipped with the latest safety standards for complete peace of mind.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -511,7 +646,7 @@
         <!--Feature One End-->
 
         <!--Floor Plan Start-->
-        <section class="floor-plan">
+        <section class="floor-plan" id="floor-plans">
             <div class="container">
                 <div class="section-title text-center">
                     <span class="section-title__tagline">Villa plans</span>
@@ -747,7 +882,7 @@
         <!--Apartments One End-->
 
         <!--Neighborhoods Start-->
-        <section class="neighborhoods">
+        <section class="neighborhoods" id="neighborhood">
             <div class="neighborhoods-bg"
                 style="background-image: url(assets/images/backgrounds/neighborhoods-bg.jpg);"></div>
             <div class="container">
@@ -762,59 +897,45 @@
                                 <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
                                     <div class="accrodion active">
                                         <div class="accrodion-title">
-                                            <h4>Restaurants</h4>
+                                            <h4>Spiritual Centers</h4>
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">
-                                                <p>Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod
-                                                    tempor inci simply free.</p>
+                                                <p>650 m from Jain Temple & 500 m from Hanuman Temple.</p>
                                             </div><!-- /.inner -->
                                         </div>
                                     </div>
                                     <div class="accrodion">
                                         <div class="accrodion-title">
-                                            <h4>Central park</h4>
+                                            <h4>Shopping & Entertainment</h4>
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">
-                                                <p>Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod
-                                                    tempor inci simply free.</p>
+                                                <p>2.4 km from R Square Mall & 3.9 km from Galaxy High Street.</p>
                                             </div><!-- /.inner -->
                                         </div>
                                     </div>
                                     <div class="accrodion">
                                         <div class="accrodion-title">
-                                            <h4>Shopping center</h4>
+                                            <h4>Education</h4>
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">
-                                                <p>Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod
-                                                    tempor inci simply free.</p>
+                                                <p>3.7 km from Shree Swaminarayan Gurukul.</p>
                                             </div><!-- /.inner -->
                                         </div>
                                     </div>
                                     <div class="accrodion">
                                         <div class="accrodion-title">
-                                            <h4>Hospitals</h4>
+                                            <h4>Healthcare</h4>
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">
-                                                <p>Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod
-                                                    tempor inci simply free.</p>
+                                                <p>1.3 km from Janseva Multispeciality Hospital.</p>
                                             </div><!-- /.inner -->
                                         </div>
                                     </div>
-                                    <div class="accrodion last-child">
-                                        <div class="accrodion-title">
-                                            <h4>Play grounds</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod
-                                                    tempor inci simply free.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -830,11 +951,10 @@
                                     <div class="neighborhoods__popup-box">
                                         <div class="neighborhoods__popup">
                                             <div class="neighborhoods__popup-inner">
-                                                <h5 class="neighborhoods__popup-title">Restauant</h5>
-                                                <p class="neighborhoods__popup-text">Metropolitan Opera House
-                                                    Lincoln Center
-                                                    Theater New York</p>
-                                                <span class="neighborhoods__popup-km">13.5KM</span>
+                                                <h5 class="neighborhoods__popup-title">Spiritual Centers</h5>
+                                                <p class="neighborhoods__popup-text">650 m from Jain Temple
+                                                    500 m from Hanuman Temple</p>
+                                                <span class="neighborhoods__popup-km">650M</span>
                                             </div>
                                         </div>
                                     </div>
@@ -844,11 +964,10 @@
                                     <div class="neighborhoods__popup-box">
                                         <div class="neighborhoods__popup">
                                             <div class="neighborhoods__popup-inner">
-                                                <h5 class="neighborhoods__popup-title">Central park</h5>
-                                                <p class="neighborhoods__popup-text">Metropolitan Opera House
-                                                    Lincoln Center
-                                                    Theater New York</p>
-                                                <span class="neighborhoods__popup-km">13.5KM</span>
+                                                <h5 class="neighborhoods__popup-title">Shopping & Entertainment</h5>
+                                                <p class="neighborhoods__popup-text"> R Square Mall 
+                                                   Galaxy High Street</p>
+                                                <span class="neighborhoods__popup-km">2.3KM</span>
                                             </div>
                                         </div>
                                     </div>
@@ -858,11 +977,9 @@
                                     <div class="neighborhoods__popup-box">
                                         <div class="neighborhoods__popup">
                                             <div class="neighborhoods__popup-inner">
-                                                <h5 class="neighborhoods__popup-title">Shopping center</h5>
-                                                <p class="neighborhoods__popup-text">Metropolitan Opera House
-                                                    Lincoln Center
-                                                    Theater New York</p>
-                                                <span class="neighborhoods__popup-km">13.5KM</span>
+                                                <h5 class="neighborhoods__popup-title">Education</h5>
+                                                <p class="neighborhoods__popup-text">Shree Swaminarayan Gurukul</p>
+                                                <span class="neighborhoods__popup-km">3.5KM</span>
                                             </div>
                                         </div>
                                     </div>
@@ -872,11 +989,9 @@
                                     <div class="neighborhoods__popup-box">
                                         <div class="neighborhoods__popup">
                                             <div class="neighborhoods__popup-inner">
-                                                <h5 class="neighborhoods__popup-title">Hospitals</h5>
-                                                <p class="neighborhoods__popup-text">Metropolitan Opera House
-                                                    Lincoln Center
-                                                    Theater New York</p>
-                                                <span class="neighborhoods__popup-km">13.5KM</span>
+                                                <h5 class="neighborhoods__popup-title">Healthcare</h5>
+                                                <p class="neighborhoods__popup-text">Janseva Multispeciality Hospital</p>
+                                                <span class="neighborhoods__popup-km">1.2KM</span>
                                             </div>
                                         </div>
                                     </div>
@@ -889,86 +1004,8 @@
         </section>
         <!--Neighborhoods End-->
 
-        <!--Brand One Start-->
-        <section class="brand-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="brand-one__inner">
-                            <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
-                        "0": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 2
-                        },
-                        "375": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 2
-                        },
-                        "575": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 3
-                        },
-                        "767": {
-                            "spaceBetween": 50,
-                            "slidesPerView": 4
-                        },
-                        "991": {
-                            "spaceBetween": 50,
-                            "slidesPerView": 5
-                        },
-                        "1199": {
-                            "spaceBetween": 100,
-                            "slidesPerView": 6
-                        }
-                    }}'>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/brand-1-1.png" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/brand-1-2.png" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/brand-1-3.png" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/brand-1-4.png" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/brand-1-5.png" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/brand-1-6.png" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/brand-1-1.png" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/brand-1-2.png" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/brand-1-3.png" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/brand-1-4.png" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/brand-1-5.png" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/brand-1-6.png" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Brand One End-->
-
         <!--Contact One Start-->
-        <section class="contact-one">
+        <section class="contact-one" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-5">
@@ -986,8 +1023,7 @@
                                     <p class="contact-one__person-sub-title">Certified agent</p>
                                 </div>
                             </div>
-                            <p class="contact-one__text-1">Lorem ipsum dolor sit amet, consecte adipiscing elit. In hac
-                                habitasse platea dictumst. Duis porta, quam ut finibus ultrices.</p>
+                            <p class="contact-one__text-1">You are invited to experience the grand life at Niilkanth Aaradhya. Our team is ready to provide you with all the details, answer your questions, and guide you on a personalized tour of the site. Secure your spot among the first 75 families to avail the special launch offer.</p>
                             <ul class="list-unstyled contact-one__list">
                                 <li>
                                     <div class="icon">
@@ -1049,96 +1085,8 @@
         </section>
         <!--Contact One End-->
 
-        <!--News One Start-->
-        <section class="news-one">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="section-title__tagline">What’s Happening</span>
-                    <h2 class="section-title__title">Latest news updates <br> & articles</h2>
-                </div>
-                <div class="row">
-                    <!--News One Single Start-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="news-one__single">
-                            <div class="news-one__img">
-                                <img src="assets/images/blog/news-1-1.jpg" alt="">
-                            </div>
-                            <div class="news-one__content-box">
-                                <div class="news-one__date">
-                                    <p>18 april</p>
-                                </div>
-                                <div class="news-one__content">
-                                    <p class="news-one__author">by John Smith</p>
-                                    <h3 class="news-one__title"><a href="news-details.html">Let’s understand the
-                                            different types of luxury spaces</a></h3>
-                                </div>
-                                <div class="news-one__bottom">
-                                    <a href="news-details.html" class="news-one__more"> <i
-                                            class="fa fa-arrow-right"></i> Read More</a>
-                                    <a href="news-details.html" class="news-one__comments"> <i
-                                            class="fas fa-comments"></i> 2 Comments</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--News One Single End-->
-                    <!--News One Single Start-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="news-one__single">
-                            <div class="news-one__img">
-                                <img src="assets/images/blog/news-1-2.jpg" alt="">
-                            </div>
-                            <div class="news-one__content-box">
-                                <div class="news-one__date">
-                                    <p>18 april</p>
-                                </div>
-                                <div class="news-one__content">
-                                    <p class="news-one__author">by John Smith</p>
-                                    <h3 class="news-one__title"><a href="news-details.html">Lorem Ipsum has been the
-                                            industry's standard dummy</a></h3>
-                                </div>
-                                <div class="news-one__bottom">
-                                    <a href="news-details.html" class="news-one__more"> <i
-                                            class="fa fa-arrow-right"></i> Read More</a>
-                                    <a href="news-details.html" class="news-one__comments"> <i
-                                            class="fas fa-comments"></i> 2 Comments</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--News One Single End-->
-                    <!--News One Single Start-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="news-one__single">
-                            <div class="news-one__img">
-                                <img src="assets/images/blog/news-1-3.jpg" alt="">
-                            </div>
-                            <div class="news-one__content-box">
-                                <div class="news-one__date">
-                                    <p>18 april</p>
-                                </div>
-                                <div class="news-one__content">
-                                    <p class="news-one__author">by John Smith</p>
-                                    <h3 class="news-one__title"><a href="news-details.html">The point of using Lorem
-                                            Ipsum is that it has a more</a></h3>
-                                </div>
-                                <div class="news-one__bottom">
-                                    <a href="news-details.html" class="news-one__more"> <i
-                                            class="fa fa-arrow-right"></i> Read More</a>
-                                    <a href="news-details.html" class="news-one__comments"> <i
-                                            class="fas fa-comments"></i> 2 Comments</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--News One Single End-->
-                </div>
-            </div>
-        </section>
-        <!--News One End-->
-
         <!--Gallery One Start-->
-        <section class="gallery-one">
+        <section class="gallery-one" id="gallery">
             <div class="gallery-one__container">
                 <div class="gallery-one__carousel thm-owl__carousel owl-theme owl-carousel" data-owl-options='{
                     "items": 5,
@@ -1376,22 +1324,6 @@
     </div>
     <!-- /.mobile-nav__wrapper -->
 
-    <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <!-- /.search-popup__overlay -->
-        <div class="search-popup__content">
-            <form action="#">
-                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
-                <input type="text" id="search" placeholder="Search Here..." />
-                <button type="submit" aria-label="search submit" class="thm-btn">
-                    <i class="icon-magnifying-glass"></i>
-                </button>
-            </form>
-        </div>
-        <!-- /.search-popup__content -->
-    </div>
-    <!-- /.search-popup -->
-
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="icon-right-arrow"></i></a>
 
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
@@ -1424,6 +1356,72 @@
 
     <!-- template js -->
     <script src="assets/js/aports.js"></script>
+     <!-- <script>
+        // Wait for the document to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hide preloader when page is loaded
+            setTimeout(function() {
+                document.querySelector('.preloader').style.display = 'none';
+            }, 1000);
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        // Update active class in navigation
+                        document.querySelectorAll('.main-menu__list li a').forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        this.classList.add('active');
+                        
+                        // Scroll to the target element
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if(document.querySelector('.mobile-nav__content').classList.contains('active')) {
+                            document.querySelector('.mobile-nav__toggler').click();
+                        }
+                    }
+                });
+            });
+            
+            // Update active class on scroll
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.main-menu__list li a');
+                
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if(pageYOffset >= (sectionTop - 150)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if(link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        
+            
+            new WOW().init();
+        });
+    </script> -->
 </body>
 
 </html>
