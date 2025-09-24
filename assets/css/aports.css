@@ -592,7 +592,7 @@ ul {
 .main-menu__logo {
   position: relative;
   display: block;
-  background-color: var(--aports-base);
+  /* background-color: var(--aports-gray); */
   padding: 30.5px 60px;
   margin-top: -40px;
 }
