@@ -393,7 +393,7 @@ if ($('#website').val().trim() !== "") {
   $('#form-messages').empty();
 
   $.ajax({
-    url: 'https://veena-226u.onrender.com/send-mail',
+    url: 'https://sarasche-aradhya.onrender.com/send-mail',
     type: 'POST',
     contentType: 'application/json',
     data: JSON.stringify(formData),
