@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.niilkanthaaradhya.com/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.niilkanthaaradhya.com/assets/webp/banner_01.webp</image:loc>
+      <image:title>Niilkanth Aaradhya - Vapi's Biggest Residences</image:title>
+      <image:caption>Luxury 2 & 3 BHK apartments in Vapi, Gujarat</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.niilkanthaaradhya.com/assets/webp/banner_02.webp</image:loc>
+      <image:title>Niilkanth Aaradhya Residences</image:title>
+      <image:caption>Modern amenities and landscaped gardens</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.niilkanthaaradhya.com/assets/aaradhya_2.png</image:loc>
+      <image:title>Niilkanth Aaradhya Logo</image:title>
+    </image:image>
+  </url>
+</urlset>
